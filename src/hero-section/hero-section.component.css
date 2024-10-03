@@ -1,0 +1,229 @@
+/* Full-width container */
+.carousel-container {
+  position: relative;
+  width: 100vw; /* Full viewport width */
+  height: auto;
+  overflow: hidden;
+  margin: 0; /* No margin */
+}
+
+/* Full-width images */
+.carousel-container img {
+  width: 100vw;
+  height: 26vw;
+  object-fit: fill;
+  margin-top: 20px;
+}
+
+/* Previous and Next buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  z-index: 1; /* Ensure buttons are above the image */
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Ensure the buttons are visible even on full-width */
+.prev,
+.next {
+  display: block;
+}
+.carousel-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Image in the Carousel */
+.carousel-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures the image covers the container without being stretched */
+  display: block;
+}
+
+/* Previous and Next Buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+  border: none;
+  z-index: 10;
+}
+
+/* Positioning the Previous Button to the left */
+.prev {
+  left: 0;
+}
+
+/* Positioning the Next Button to the right */
+.next {
+  right: 0;
+}
+
+/* Overlay Content */
+.overlay-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 20px;
+  background-color: rgb(86 18 112 / 0%); /* Slight black overlay for contrast */
+  width: 70%; /* Adjust width as needed */
+  box-sizing: border-box;
+  opacity: 88%;
+}
+
+/* Title Styling */
+.overlay-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-family: "Arial", sans-serif;
+}
+
+/* Paragraph Styling */
+.overlay-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.overlay-content button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #b3044c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.overlay-content button:hover {
+  background-color: #ff3311;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .overlay-content {
+    top: 60%; /* Adjust for smaller screens */
+    width: 90%; /* Take more width on smaller screens */
+  }
+
+  .overlay-content h1 {
+    font-size: 2rem;
+  }
+
+  .overlay-content p {
+    font-size: 1rem;
+  }
+
+  .overlay-content button {
+    font-size: 0.9rem;
+  }
+}
+.browse {
+  text-align: center;
+  margin-top: 40px;
+  padding: 1px;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-around; /* Evenly distribute icons */
+  flex-wrap: wrap; /* Allow wrapping for small screens */
+  gap: 20px; /* Space between icons */
+  margin-bottom: 20px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column; /* Stack icon and label vertically */
+  align-items: center;
+  width: 100px; /* Adjust as needed */
+  padding: 20px; /* Add padding around each box */
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.icon-container a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Ensure text color is inherited */
+  text-align: center;
+}
+
+.icon-container img {
+  width: 50px; /* Size of the icons */
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.icon-container p {
+  font-size: 14px; /* Adjust font size */
+  margin: 0;
+  color: #333;
+}
+
+.icon-container:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.icon-container:hover p {
+  color: #b3044c; /* Change text color on hover */
+}
+
+.icon-container:hover img {
+  transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+@media (max-width: 768px) {
+  .logo {
+    justify-content: center; /* Center icons on smaller screens */
+  }
+  .icon-container {
+    width: 80px;
+  }
+}
+.heading {
+  word-break: break-word;
+  color: rgb(51, 51, 51);
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.17;
+  margin-left: -848px;
+}

@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="logo">
+    <img src="assets/blinkticketlogo.png" alt="Blinkticket" />
+  </div>
+
+ <div class="navbar-container">
+    <input
+      type="text"
+      placeholder="Location"
+      class="navbar-input"
+    />
+    <input
+      type="date"
+      class="navbar-input"
+    />
+    <select class="navbar-input">
+      <option value="" disabled selected>Select Event Type</option>
+      <option value="conference">Conference</option>
+      <option value="workshop">Workshop</option>
+      <option value="webinar">Webinar</option>
+      <option value="meetup">Meetup</option>
+    </select>
+    <button (click)="search()" class="navbar-button">Search</button>
+  </div>
+
+  <a routerLink="/profile" class="user-icon">
+    <mat-icon>person</mat-icon> <!-- Material icon -->
+  </a>
+
+</div>

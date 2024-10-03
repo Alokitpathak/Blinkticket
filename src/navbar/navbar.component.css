@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  height: 10vh;
+  
+}
+
+.logo img {
+  height: 70px;
+  width: 109px;
+  margin-left: 26px;
+  margin-top: 5px;
+  border-radius: 15px;
+}
+/* Navbar styles */
+.navbar {
+  background-color: #e4e4e452; /* Dark background for navbar */
+  padding: 1rem; /* Padding for navbar */
+}
+
+/* Container for input elements */
+.navbar-container {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-around; /* Space items evenly */
+}
+
+/* Input box styles */
+.navbar-input {
+  padding: 0.5rem; /* Padding inside the input */
+  margin: 0 0.5rem; /* Margin around the input */
+  border: 2px solid #fff; /* White border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #e4e4e452; /* Dark background for input */
+  color: #5d5959; /* White text */
+  font-size: 1rem; /* Font size */
+  width: 200px; /* Fixed width, adjust as needed */
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+/* Input box focus state */
+.navbar-input:focus {
+  border-color: #ff5722; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Select box styles */
+.navbar-input select {
+  padding: 0.5rem; /* Padding for the select element */
+  margin: 0 0.5rem; /* Margin around the select */
+  border: 2px solid #fff; /* White border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #e4e4e452; /* Dark background for select */
+  color: #5d5959; /* White text */
+  font-size: 1rem; /* Font size */
+}
+
+/* Button styles */
+.navbar-button {
+  padding: 0.5rem 1rem; /* Padding for button */
+  background-color: #b3044c; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Font size */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Button hover effect */
+.navbar-button:hover {
+  background-color: #e64a19; /* Darker shade on hover */
+}
+.user-icon {
+  margin: auto;
+  margin-top: 12px;
+  color: #545050;
+}

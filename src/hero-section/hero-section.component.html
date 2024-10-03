@@ -1,0 +1,48 @@
+<div class="carousel-container">
+  <!-- Previous Button -->
+  <button class="prev" (click)="prev()">&#10094;</button>
+
+  <!-- Display the current image -->
+  <a href="#">
+    <img
+      [src]="images[currentIndex].src"
+      alt="promotion-banner"
+      class="carousel-image"
+    />
+  </a>
+
+  <!-- Overlay Content (Title, Description, Button) -->
+  <div class="overlay-content">
+    <h1>{{ images[currentIndex].title }}</h1>
+    <p>{{ images[currentIndex].description }}</p>
+    <button>BUY TICKETS</button>
+  </div>
+
+  <!-- Next Button -->
+  <button class="next" (click)="next()">&#10095;</button>
+
+  <div class="browse">
+    <div>
+      <h4 class="heading">Browse events by genre</h4>
+    </div>
+    <div class="logo">
+      <div class="icon-container">
+        <img src="assets/picture.png" alt="Picture Icon" />
+        <p>Music</p>
+      </div>
+      <div class="icon-container">
+        <img src="assets/party.png" alt="Party Icon" />
+        <p>Party</p>
+      </div>
+      <div class="icon-container">
+        <img src="assets/projector.png" alt="Projector Icon" />
+        <p>Movies</p>
+      </div>
+      <div class="icon-container">
+        <img src="assets/meme.png" alt="Meme Icon" />
+        <p>Comedy</p>
+      </div>
+    </div>
+  </div>
+  
+</div>

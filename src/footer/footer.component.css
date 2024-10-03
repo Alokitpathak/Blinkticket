@@ -1,0 +1,121 @@
+.footer-container {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .footer-brand h2 {
+    color: #ff0066;
+  }
+  
+  .footer-brand p {
+    margin: 10px 0;
+  }
+  
+  .footer-brand a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .footer-links div {
+    margin: 0 20px;
+  }
+  
+  .footer-links h3 {
+    color: #ff0066;
+    margin-bottom: 15px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .app-section {
+    text-align: center;
+  }
+  
+  .app-links img {
+    margin: 10px;
+    width: 150px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    font-size: 14px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    color: #aaa;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .footer-top {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-links div {
+      margin-bottom: 20px;
+    }
+  
+    .app-section {
+      margin-top: 30px;
+    }
+  }
+
+  .heading{
+    word-break: break-word;
+    color: rgb(51, 51, 51);
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.17;
+    margin-top: 27px;
+    margin-left: 510px;
+
+  }
+  .content{
+   justify-content: center;
+  }
+  
